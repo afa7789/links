@@ -18,7 +18,7 @@
             margin: 0 auto; 
         }
         :root { --bg: #fff; --fg: #000; --accent: #f00; }
-        [data-theme="dark"] { --bg: #000; --fg: #fff; --accent: #0f0; }
+        [data-theme="dark"] { --bg: #000; --fg: #fff; --accent: #852bda; }
         
         h1 { font-size: 24px; margin-bottom: 20px; }
         h2 { font-size: 18px; margin: 30px 0 10px 0; color: var(--accent); }
@@ -194,7 +194,7 @@
         }
         
         // Load saved theme
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme = localStorage.getItem('theme') || 'dark';
         document.body.setAttribute('data-theme', savedTheme);
     </script>
 </body>
